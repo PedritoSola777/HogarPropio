@@ -1,0 +1,231 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Color de fondo general */
+  margin: 0;
+}
+
+/************************************************
+ * HEADER
+ ************************************************/
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/************************************************
+ * NAVBAR
+ ************************************************/
+ /* Barra de navegación */
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* El logo a la izquierda y el menú a la derecha */
+  background-color: #2C3E50;
+  padding: 10px 20px;              /* Ajusta el espacio interno */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Contenedor del menú */
+.navbar-menu {
+  display: flex;
+  margin-left: auto;   /* Empuja la lista hacia la derecha */
+  margin-right: 20px;  /* Espacio entre la última opción y el borde derecho */
+}
+
+/* Elementos de lista */
+.navbar-menu li {
+  list-style: none;
+  margin: 0 15px; /* Espaciado horizontal entre enlaces */
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #4CAF50; /* O el color que prefieras para hover */
+}
+
+
+/* Ícono hamburguesa (por defecto oculto en escritorio) */
+.navbar-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+
+/* Logo */
+.navbar-logo img {
+  width: 180px; /* Ajusta el tamaño a tu gusto */
+  height: auto;
+}
+
+/************************************************
+* BANNER
+ ************************************************/
+ .banner-section {
+  background: url('https://img.freepik.com/free-photo/crop-architect-opening-blueprint_23-2147710985.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid') no-repeat center center/cover; /* Reemplaza 'banner.jpg' por tu imagen */
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+
+.banner-sectionProyectos{
+  background: url('https://img.freepik.com/foto-gratis/personas-que-trabajan-como-empresa-equipo_23-2149136895.jpg?t=st=1742593978~exp=1742597578~hmac=3e2cf2776bbdbc6c6f00ed042e7e81547a999f6208a62c311cb38eeb1d51ef55&w=1380') no-repeat center center/cover; /* Reemplaza 'banner.jpg' por tu imagen */
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+
+.banner-sectionPrivacidad{
+  background: url('https://img.freepik.com/foto-gratis/mujer-trabajando-superposicion-grafica-red-informatica_53876-128107.jpg?ga=GA1.1.1012085128.1742593920&semt=ais_keywords_boost') no-repeat center center/cover; /* Reemplaza 'banner.jpg' por tu imagen */
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-sectionTeam{
+  background: url('https://img.freepik.com/foto-gratis/fuerza-personas-manos-exito-reunion_1150-1690.jpg?ga=GA1.1.1012085128.1742593920&semt=ais_keywords_boost') no-repeat center center/cover; /* Reemplaza 'banner.jpg' por tu imagen */
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+
+.banner-sectionBlog {
+  position: relative;
+  background: url('https://img.freepik.com/foto-gratis/mensaje-online-blog-chat-comunicacion-envolver-concepto-icono-grafico_53876-139717.jpg?ga=GA1.1.1012085128.1742593920&semt=ais_keywords_boost') no-repeat center center/cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.banner-sectionBlog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Cambia la opacidad a tu gusto */
+  z-index: 1;
+}
+
+.banner-sectionBlog * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.banner-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.banner-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.btn-banner {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-banner:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 60px 0;
+  }
+  .banner-section h1 {
+    font-size: 32px;
+  }
+  .banner-section p {
+    font-size: 16px;
+  }
+}
+
+
+
+/************************************************
+ * MEDIA QUERIES (Responsive)
+ ************************************************/
+@media (max-width: 768px) {
+  /* Ajustes de tipografía para pantallas pequeñas */
+  .banner-section {
+    padding: 60px 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 32px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+  }
+
+  /* Muestra el ícono hamburguesa en móviles */
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* Oculta el menú horizontal en móviles */
+  .navbar-menu {
+    position: absolute;
+    top: 60px; /* Ajustar según la altura de tu navbar */
+    right: 20px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 15px 0;
+    display: none; /* Se oculta por defecto */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .navbar-menu.show {
+    display: flex; /* Se mostrará al hacer clic en el ícono hamburguesa */
+  }
+
+  .navbar-menu li {
+    margin: 10px 20px;
+  }
+
+  .navbar-menu li a {
+    color: #333; 
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+ 
