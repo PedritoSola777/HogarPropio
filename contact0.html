@@ -79,7 +79,7 @@
 	  <div class="navbar-logo">
 		<a href="index.html">
 		  <!-- Ajusta la ruta de tu imagen -->
-		  <img src="assets/images/NavLogoHp.png" alt="Logo" />
+		  <img src="assets/images/hogar13[1].png" alt="Logo" />
 		</a>
 	  </div>
   
@@ -92,11 +92,17 @@
 	  <ul class="navbar-menu" id="navbar-menu">
 		<li><a href="index.html">Inicio</a></li>
 		<li><a href="team.html">Capital Humano</a></li>
-		<li><a href="#">Proyectos</a></li>
+		<li><a href="Proyectos.html">Proyectos</a></li>
 		<li><a href="blog-grid.html">Centro de Noticias</a></li>
-		<li><a href="contact.html">Contacto</a></li>
+		<li><a href="contact0.html">Contacto</a></li>
 	  </ul>
 	</nav>
+  
+	<!-- SECCIÓN BANNER -->
+	 
+  </header>
+	<!-- NAVBAR -->
+	
   
 	
 <!--==================================================-->
@@ -136,7 +142,7 @@
 						<li><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="protfolio-details.html">Portfolio Details</a></li>
 						<li><a href="404.html">Error Page</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact0.html">Contact</a></li>
 					</ul>
 				</li>
 				<li><a href="#">Portfolio</a>
@@ -151,7 +157,7 @@
 						<li><a href="blog-details.html">Blog Details</a></li>
 					</ul>
 				</li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact0.html">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -324,34 +330,47 @@
 					<p>Escríbenos y nuestros expertos se pondrán en contacto contigo, para transformar tu sueño en realidad</p>
 				</div>
 				<div class="contact_main_info">
+					<!-- Teléfono -->
 					<div class="call-do-action-info">
 						<div class="call-do-social_icon">
 							<i class="fas fa-phone-alt"></i>
 						</div>
 						<div class="call_info">
 							<p>Llámanos</p>
-							<h3>+123 - (4567) - 890</h3>
+							<h3><a href="tel:7221068678" style="color: inherit; text-decoration: none;">722 106 8678</a></h3>
 						</div>
 					</div>
+				
+					<!-- Correo -->
 					<div class="call-do-action-info">
 						<div class="call-do-social_icon">
 							<i class="fas fa-envelope-open"></i>
 						</div>
 						<div class="call_info">
-							<p>Alguna duda? Contáctanos por correo</p>
-							<h3>example@gmail.com</h3>
+							<p>¿Alguna duda? Contáctanos por correo</p>
+							<h3>
+								<a href="mailto:proyectos@hogarpropio.com.mx" style="color: inherit; text-decoration: none;">
+									proyectos@hogarpropio.com.mx
+								</a>
+							</h3>
 						</div>
 					</div>
+				
+					<!-- Dirección -->
 					<div class="call-do-action-info">
 						<div class="call-do-social_icon">
 							<i class="fas fa-map-marker-alt"></i>
 						</div>
 						<div class="call_info">
-							<p>Nuestra Ubicacion</p>
-							<span>102/B Soltek New Elephant Road <br>California, USA</span>
+							<p>Nuestra ubicación</p>
+							<span>
+								Paseo Cristóbal Colón 224, Col. Ciprés<br>
+								50120, Toluca de Lerdo, Estado de México
+							</span>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 			<div class="col-lg-6">
 				<!-- contact form box -->
@@ -393,7 +412,7 @@
 								<label for="vehicle1"> I have a bike</label>
 							</div> -->
 							<div class="contact-form">
-								<button type="submit"><i class="far fa-thumbs-up"></i> Request Call Back </button>
+								<button type="submit"><i class="far fa-thumbs-up"></i>Escríbenos </button>
 							</div>
 						</div>
 					</form>
@@ -417,7 +436,7 @@
 <!--==================================================-->
 <!-- Start Consalt Map Area -->
 <!--==================================================-->
-<div class="map-section">
+<!-- <div class="map-section">
 	<div class="-custon-container-fluid">
 		<div class="row">
 			<div class="col-lg-12 p-0">
@@ -425,7 +444,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <!--==================================================-->
 <!-- Start Consalt Map Area -->
 <!--==================================================-->
@@ -434,46 +453,78 @@
 <!--==================================================-->
 <!-- Start Consalt Call Area -->
 <!--==================================================-->
-<section class="call_area style_three">
-	<div class="container">
-		<div class="row align-items-center">
+<section class="call_area style_three" style="background-color: #002F2F; color: #fff; padding: 40px 0;">
+	<style>
+		.call-do-action-info {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 15px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.call-do-social_icon {
+			font-size: 28px;
+			color: #fdda00;
+		}
+
+		.call_info p {
+			margin: 0;
+			font-size: 14px;
+			color: #ccc;
+		}
+
+		.call_info h3 {
+			margin: 0;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.call_info a {
+			color: inherit;
+			text-decoration: none;
+		}
+		.call_info a:visited,
+		.call_info a:hover,
+		.call_info a:active {
+			color: inherit;
+			text-decoration: none;
+		}
+	</style>
+
+	<div class="container text-center">
+		<div class="row justify-content-center">
+			<!-- Teléfono -->
 			<div class="col-lg-4 col-md-6">
 				<div class="call-do-action-info">
 					<div class="call-do-social_icon">
 						<i class="fas fa-phone-alt"></i>
 					</div>
 					<div class="call_info">
-						<p>Llamanos</p>
-						<h3>12345</h3>
+						<p>Llámamos</p>
+						<h3><a href="tel:7221068678">722 106 8678</a></h3>
 					</div>
-				</div>		
+				</div>
 			</div>
+
+			<!-- WhatsApp -->
 			<div class="col-lg-4 col-md-6">
 				<div class="call-do-action-info">
 					<div class="call-do-social_icon">
-						<i class="fas fa-phone-alt"></i>
+						<i class="fab fa-whatsapp"></i>
 					</div>
 					<div class="call_info">
 						<p>WhatsApp</p>
-						<h3>123345</h3>
+						<h3><a href="https://wa.me/527221068678" target="_blank">+52 722 106 8678</a></h3>
 					</div>
-				</div>		
-			</div>
-
-			<!-- <div class="col-lg-4 col-md-6">
-				<div class="call_social_icon">
-					<ul>
-						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a class="top-social-icon-left" href="#"><i class="fab fa-twitter"></i></a></li>
-					</ul>
 				</div>
-			</div> -->
+			</div>
 		</div>
-
 	</div>
 </section>
+
+
 <!--==================================================-->
 <!-- End Consalt Call Area -->
 <!--==================================================-->
@@ -482,116 +533,71 @@
 <!--==================================================-->
 <!-- Start Consalt Footer Area -->
 <!--==================================================-->
-<!-- <section class="footer_area style_two">
+<section class="footer_area style_two" style="background-color: #002F2F; color: #fff; padding: 40px 0;">
+	<style>
+		.footer_desc a {
+			color: inherit;
+			text-decoration: none;
+		}
+		.footer_desc a:visited,
+		.footer_desc a:hover,
+		.footer_desc a:active {
+			color: inherit;
+			text-decoration: none;
+		}
+		.footer-widget-title h4 {
+			color: #fff;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.footer_desc small {
+			display: block;
+			margin-top: 5px;
+			color: #aaa;
+		}
+	</style>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-4 col-md-6">
 				<div class="footer-widget-title">
-					<h4>About Us</h4>
+					<h4>Correo electrónico</h4>
 				</div>
-				<p class="footer_desc">Continually plagiarize virtual web service pro with home_two maximizing action</p>
-				<form action="https://formspree.io/f/myyleorq" method="POST" id="dreamit-form">
-					<div class="subscribe_form">
-						<input type="email" name="email" id="email" class="form-control" required="" data-error="Please enter your email" placeholder="Your E-Mail">
-						<button type="submit" class="btn"><i class="bi bi-send-fill"></i></button>
-					</div>
-				</form>
+				<p class="footer_desc">
+					<a href="mailto:proyectos@hogarpropio.com.mx">proyectos@hogarpropio.com.mx</a>
+					<!-- <small>(para que cuando te conectes lo configures)</small> -->
+				</p>
 			</div>
-			<div class="col-lg-1"></div>
-			<div class="col-lg-2 col-md-6">
-				<div class="footer-widget-content">
-					<div class="footer-widget-title">
-						<h4>Company</h4>
-					</div>
-					<div class="footer-widget-menu">
-						<ul>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> About Us</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Meet the Team</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Integrations</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Contact Us</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Blog</a></li>
-						</ul>
-					</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="footer-widget-title">
+					<h4>Teléfono</h4>
 				</div>
+				<p class="footer_desc">
+					<a href="tel:7221068678">722 106 8678</a>
+				</p>
 			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="footer-widget-content">
-					<div class="footer-widget-title">
-						<h4>Service</h4>
-					</div>
-					<div class="footer-widget-menu">
-						<ul>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Consultant</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Web Development</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> UI Design</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Networking</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Search Engine</a></li>
-						</ul>
-					</div>
+
+			<div class="col-lg-4 col-md-12">
+				<div class="footer-widget-title">
+					<h4>Dirección</h4>
 				</div>
+				<p class="footer_desc">
+					Paseo Cristóbal Colón 224, Col. Ciprés,<br>
+					50120, Toluca de Lerdo, Estado de México
+				</p>
 			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="footer-widget-contact">
-					<div class="footer-widget-title">
-						<h4>Contact</h4>
-					</div>
-					<div class="recent-post-item upper">
-						<div class="recent-post-image">
-							<a href="#">
-								<img width="80" height="80" src="assets/images/home_two/footer_1.png" alt="">
-							</a>
-						</div>
-						<div class="recent-post-text">
-							<h6><a href="#">Sustainability Consulting for Business Planning</a></h6>
-							<span class="rcomment">Dec 12, 2024</span>
-						</div>
-					</div>
-					<div class="recent-post-item">
-						<div class="recent-post-image">
-							<a href="#">
-								<img width="80" height="80" src="assets/images/home_two/footer_2.png" alt="">
-							</a>
-						</div>
-						<div class="recent-post-text">
-							<h6><a href="#">Sustainability Consulting for Business Planning</a></h6>
-							<span class="rcomment">Dec 12, 2024</span>
-						</div>
-					</div>
-					
+		</div>
+
+		<div class="row add-border align-items-center mt-4 pt-3">
+			<div class="col-md-7">
+				<div class="footer-bottom-content-copy">
+					<p>© 2024 Hogar Propio. Todos los derechos reservados.</p>
 				</div>
 			</div>
 			
 		</div>
-		<div class="row add-border align-items-center">
-			<div class="col-md-7">
-				<div class="footer-bottom-content">
-					<div class="footer-bottom-content-copy">
-						<p>Copyright © 2024 Consalt. Designed & Developed by Dream-IT</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5 text-right">
-				<div class="footer-bottom-content">
-					<div class="footer-bottom-menu">
-						<ul>
-							<li><a href="#">FACEBOOK</a></li>
-							<li><a href="#">TWITTER</a></li>
-							<li><a href="#">INSTAGRAM</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-	<div class="footer_all_shape">
-		<div class="footer_shape_one dance">
-			<img src="assets/images/home_3/choose_rotete.png" alt="">
-		</div>
-		<div class="footer_shape_two bounce-animate">
-			<img src="assets/images/home_3/footer_shape.png" alt="">
-		</div>
-	</div>
-</section> -->
+</section>
 <!--==================================================-->
 <!-- End Consalt Footer Area-->
 <!--==================================================-->
