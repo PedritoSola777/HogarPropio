@@ -1372,6 +1372,58 @@ section.pricing-area .section_title p {
 
 }
 
+
+#mobile-menu .material-symbols-outlined {
+  color: #ffebeb;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#mobile-menu:hover .material-symbols-outlined {
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+
+
+
+    /* ——— Flechas de navegación del carrusel ——— */
+    .owl-nav button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.55);
+      border: none;
+      padding: 0.6rem 1rem;
+      font-size: 1.25rem;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      z-index: 10;
+    }
+    .owl-nav button.owl-prev { left: -14px; }
+    .owl-nav button.owl-next { right: -14px; }
+    .owl-nav button:hover   { background: #ff6600; }
+
+    /* Opcional — elimina padding/margin que desacomode el grid */
+    .pdn_0 { padding: 0 !important; margin: 0 !important; }
+
+    /* Ajuste básico para la tarjeta */
+    .case-study-single-box img { width: 100%; height: auto; display: block; }
+    .case-study-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.75rem 1rem;
+      background: rgba(0,0,0,0.55);
+    }
+    .case-study-content h3 { margin: 0; font-size: 1.05rem; }
+    .case-study-content a  { color: #fff; text-decoration: none; }
+    .case-study-thumb { position: relative; }
+
+
+
 /* consalt button style three  */
 .consalt_btn.style_three a {
     padding-left: 0;
