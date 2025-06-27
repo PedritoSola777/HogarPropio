@@ -109,7 +109,7 @@ nav.navbar {
 }
 
 
-.banner-sectionBlog {
+.banner-sectionBlog2 {
   position: relative;
   background: url('https://img.freepik.com/foto-gratis/mensaje-online-blog-chat-comunicacion-envolver-concepto-icono-grafico_53876-139717.jpg?ga=GA1.1.1012085128.1742593920&semt=ais_keywords_boost') no-repeat center center/cover;
   padding: 100px 0;
@@ -117,6 +117,22 @@ nav.navbar {
   color: #fff;
   overflow: hidden;
 }
+
+
+.banner-sectionBlog2 {
+  position: relative;
+  background: url('https://img.freepik.com/free-photo/crop-architect-opening-blueprint_23-2147710985.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid') no-repeat center center/cover; /* Reemplaza 'banner.jpg' por tu imagen */
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+
+
+
+
 
 .banner-sectionBlog::before {
   content: "";
@@ -169,6 +185,74 @@ nav.navbar {
   .banner-section p {
     font-size: 16px;
   }
+}
+
+
+.case_study2 .case-study-single-box {
+  transition: transform 0.3s ease-in-out;
+}
+
+.case_study2 .case-study-single-box:hover {
+  transform: translateY(-5px);
+}
+
+.case_study2 .owl-carousel .owl-stage {
+  display: flex;
+}
+
+.case_study2 .owl-carousel .owl-item {
+  display: flex;
+}
+
+.case_study2 .case-study-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.case_study2 .case-study-content {
+  text-align: center;
+  background: rgba(0, 47, 47, 0.8);
+  color: #fff;
+  padding: 10px;
+  margin-top: -50px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.case_study2 .case-study-content h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.case_study2 .case-study-content h3 a:hover {
+  text-decoration: underline;
+}
+
+.case_study2 .owl-stage {
+  display: flex !important;
+  width: auto !important;
+}
+
+.case_study2 .owl-item {
+  flex: 0 0 auto;
+}
+
+.case_study2 .case-study-single-box {
+  height: 100%;
+}
+
+.case_study2 .owl-carousel .owl-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.case_study2 .case-study-thumb {
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 

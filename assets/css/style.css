@@ -1385,7 +1385,25 @@ section.pricing-area .section_title p {
 }
 
 
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-feature-settings: 'liga'; /* activa ligaduras */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 1em;
+  text-indent: -9999px;
+  position: relative;
+}
 
+.material-symbols-outlined::before {
+  content: 'search';
+  text-indent: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+    
 
     /* ——— Flechas de navegación del carrusel ——— */
     .owl-nav button {

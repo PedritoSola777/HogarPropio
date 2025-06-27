@@ -113,6 +113,13 @@
 			<span data-text-preloader="G" class="letters-loading">G</span>
 			<span data-text-preloader="A" class="letters-loading">A</span>
 			<span data-text-preloader="R" class="letters-loading">R</span>
+			<span data-text-preloader="P" class="letters-loading">P</span>
+			<span data-text-preloader="R" class="letters-loading">R</span>
+			<span data-text-preloader="O" class="letters-loading">O</span>
+			<span data-text-preloader="P" class="letters-loading">P</span>
+			<span data-text-preloader="I" class="letters-loading">I</span>
+			<span data-text-preloader="O" class="letters-loading">O</span>
+
 			<!-- <span data-text-preloader="L" class="letters-loading">L</span>
 			<span data-text-preloader="T" class="letters-loading">T</span> -->
 		</div>
@@ -244,7 +251,7 @@
 						<br><br> -->
 						<br><br><br>
 						<p style="font-size: 18px;">
-							Nuestra compañía está incorporada al padrón de constructoras de Infonavit y Fovissste, para la verificación de proyectos autorizados por ellos
+							Nuestra compañía está incorporada al padrón de constructoras de Infonavit y Fovissste, para la verificación de proyectos autorizados por ellos.
 						</p><br>
 						<br><br>
 						
@@ -488,6 +495,57 @@
           </div>
         </div>
 
+
+
+		<div class="col-lg-12 pdn_0">
+  <div class="case-study-single-box style_two">
+    <div class="case-study-thumb">
+      <img src="https://img.freepik.com/free-photo/plumbing-professional-doing-his-job_23-2150721549.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+      <div class="case-study-content">
+        <h3><a href="#">Plomería general</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12 pdn_0">
+  <div class="case-study-single-box style_two">
+    <div class="case-study-thumb">
+      <img src="https://img.freepik.com/premium-photo/couple-assembling-furniture-home_1048944-26121389.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+      <div class="case-study-content">
+        <h3><a href="#">Renovación de interiores</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12 pdn_0">
+  <div class="case-study-single-box style_two">
+    <div class="case-study-thumb">
+      <img src="https://img.freepik.com/premium-photo/installation-lock-front-wooden-entrance-door-portrait-young-locksmith-workman_255667-60693.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+      <div class="case-study-content">
+        <h3><a href="#">Instalacion de puertas</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12 pdn_0">
+  <div class="case-study-single-box style_two">
+    <div class="case-study-thumb">
+      <img src="https://img.freepik.com/free-photo/young-engineer-adjusting-autonomous-heating_1303-26537.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+      <div class="case-study-content">
+        <h3><a href="#">Instalación hidráulica</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
       </div><!-- /.owl-carousel -->
     </div>
 	</div>
@@ -644,23 +702,47 @@
   <!-- Owl Carousel 2 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  <script>
-    $('.case_study2').owlCarousel({
-  loop: false, // 👈 Desactivamos el bucle
+
+
+	<script>
+  $('.case_study2').owlCarousel({
+    loop: true,
+    margin: 30,
+    responsive:{
+      0:{ items:1 },
+      576:{ items:2 },
+      992:{ items:3 }
+    },
+    nav: true,                                           // ← activa las flechas
+    navText: [                                           // contenido de cada flecha
+      '<i class="fas fa-chevron-left"></i>',
+      '<i class="fas fa-chevron-right"></i>'
+    ]
+  });
+</script>
+
+  <Script>$('.case_study2').owlCarousel({
+  loop: true,
   margin: 30,
-  responsive: {
-    0:   { items: 1 },
-    576: { items: 2 },
-    992: { items: 3 }
-  },
   nav: true,
-  navText: [
-    '<i class="fas fa-chevron-left"></i>',
-    '<i class="fas fa-chevron-right"></i>'
-  ]
+  autoplay: true,
+  autoplayTimeout: 4000,
+  smartSpeed: 800,
+  rewind: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    1200: {
+      items: 3
+    }
+  }
 });
 
-  </script>
+</Script>
 
 </body>
 </html>
