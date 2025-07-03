@@ -109,14 +109,7 @@ nav.navbar {
 }
 
 
-.banner-sectionBlog2 {
-  position: relative;
-  background: url('https://img.freepik.com/foto-gratis/mensaje-online-blog-chat-comunicacion-envolver-concepto-icono-grafico_53876-139717.jpg?ga=GA1.1.1012085128.1742593920&semt=ais_keywords_boost') no-repeat center center/cover;
-  padding: 100px 0;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-}
+
 
 
 .banner-sectionBlog2 {
@@ -128,6 +121,14 @@ nav.navbar {
   overflow: hidden;
 }
 
+.banner-index {
+  position: relative;
+  background: url('https://img.freepik.com/premium-photo/casa-en-proyecto-sobre-sus-planos-en-version-maqueta_207722-59.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740') no-repeat center center/cover;
+  padding: 200px 0; /* Aumenta de 100px a 200px */
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
 
 
 
