@@ -101,13 +101,25 @@ nav.navbar {
   color: #fff;
 }
 
-.banner-sectionTeam{
-  background: url('https://img.freepik.com/foto-gratis/fuerza-personas-manos-exito-reunion_1150-1690.jpg?ga=GA1.1.1012085128.1742593920&semt=ais_keywords_boost') no-repeat center center/cover; /* Reemplaza 'banner.jpg' por tu imagen */
+.banner-sectionTeam {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('https://img.freepik.com/free-photo/successful-happy-business-team_53876-74892.jpg?t=st=1754681534~exp=1754685134~hmac=c5f8025f5f6c244b83698794a14e541a915707dc4957d3f6cd5fda44f93d1970&w=1480') 
+    no-repeat center center/cover;
   padding: 100px 0;
   text-align: center;
   color: #fff;
 }
 
+.banner-sectionContact {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('https://img.freepik.com/free-photo/addicted-gadgets_1098-13864.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80') 
+    no-repeat center center/cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
 
 
 
@@ -123,7 +135,7 @@ nav.navbar {
 
 .banner-index {
   position: relative;
-  background: url('https://img.freepik.com/premium-photo/casa-en-proyecto-sobre-sus-planos-en-version-maqueta_207722-59.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740') no-repeat center center/cover;
+  background: url('https://img.freepik.com/free-photo/construction-silhouette_1150-8336.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80') no-repeat center center/cover;
   padding: 200px 0; /* Aumenta de 100px a 200px */
   text-align: center;
   color: #fff;
