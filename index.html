@@ -75,6 +75,122 @@
     referrerpolicy="no-referrer"
   />
 
+	<style>
+		/* ===============================
+   GALERÍA / CASE STUDY
+================================ */
+
+.case-study-area {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.case_study2 {
+  width: 100%;
+}
+
+.case-study-single-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay de texto */
+.case-study-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 47, 47, 0.75);
+  color: #ffffff;
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+}
+
+.case-study-single-box:hover .case-study-content {
+  transform: translateY(0);
+}
+
+.case-study-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===============================
+   OWL CAROUSEL FIXES LIMPIOS
+================================ */
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: hidden;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===============================
+   NAVIGATION
+================================ */
+
+.owl-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.owl-nav button {
+  background: #002F2F !important;
+  color: #ffffff !important;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  margin: 0 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.owl-nav button:hover {
+  background: #004F4F !important;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 767px) {
+  .case-study-content {
+    transform: translateY(0);
+    background: rgba(0, 47, 47, 0.85);
+  }
+
+  .case-study-content h3 {
+    font-size: 16px;
+  }
+}
+
+	</style>
+  
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
@@ -453,7 +569,7 @@
 							<div class="counter-single-item style_two">
 								<div class="counter-content none">
 									<div class="counter-_number">
-										<h1 class="counter">5000+</h1>
+										<h1 class="counter">5000</h1>
 										<!-- <span>K+</span>							 -->
 									</div>
 									<div class="counter_title">
@@ -478,7 +594,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>    
 				<div class="col-lg-4"></div>
 			</div>
 		</div>
@@ -500,145 +616,123 @@
 <!-- Projects Section -->
 <!--==================================================-->
 <section class="case-study-area style_three">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- section title -->
-				<div class="section_title home_five text-center ">
-					<p style="font-size: 18px; color: #002F2F;"><b>GALERÍA FOTOGRÁFICA</b> </p>
-					<!-- <h1>EXCELENCIA EN CADA PROYECTO</h1> -->
-					<!-- <h1>With highly Satisfaction</h1> -->
-				</div>
-			</div>
-		</div>
-		<div class="row pdn_0">
-			 <div class="container my-5">
-    <div class="row pdn_0">
-      <div class="case_study2 owl-carousel">
 
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/premium-photo/cranes-construction-site-against-sky_1048944-6967337.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Demolición de casas</a></h3>
-              </div>
-            </div>
+  <div class="container-fluid">
+
+    <!-- =========================
+         TÍTULO DE LA SECCIÓN
+    ========================== -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section_title home_five text-center">
+          <p style="font-size: 18px; color: #002F2F;">
+            <b>GALERÍA FOTOGRÁFICA</b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         CARRUSEL OWL
+    ========================== -->
+    <div class="case_study2 owl-carousel">
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/cranes-construction-site-against-sky_1048944-6967337.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Demolición de casas</h3>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/premium-photo/worker-with-safety-helmet-walks-through-construction-area_327697-830.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Cimientos</a></h3>
-              </div>
-            </div>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/worker-with-safety-helmet-walks-through-construction-area_327697-830.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Cimientos</h3>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/premium-photo/welding-hardware-lay-foundation-industry-with-all-safety-equipment_538646-9332.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Soldaduras</a></h3>
-              </div>
-            </div>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/welding-hardware-lay-foundation-industry-with-all-safety-equipment_538646-9332.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Soldaduras</h3>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/free-photo/woman-paints-wall-with-roller-home_1398-1595.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Pintura del hogar</a></h3>
-              </div>
-            </div>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/woman-paints-wall-with-roller-home_1398-1595.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Pintura del hogar</h3>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/free-photo/safety-tools-painting-work_23-2148908401.jpg?t=st=1740769246~exp=1740772846~hmac=98c190acff4b48b06f037bb4dedbbfec010e07c2d20d1c69344f0342ce36ecd7&w=740" alt="">
-              <div class="case-study-content">
-                <h3><a href="portfolio.html">Remodelación de tu hogar</a></h3>
-              </div>
-            </div>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/safety-tools-painting-work_23-2148908401.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Remodelación de tu hogar</h3>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/free-photo/large-building-site_1127-3251.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid" alt="">
-              <div class="case-study-content">
-                <h3><a href="portfolio.html">Construcción</a></h3>
-              </div>
-            </div>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/large-building-site_1127-3251.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Construcción</h3>
           </div>
         </div>
+      </div>
 
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/construction-manager-engineer-dressed-orange-work-vests-hard-helmets-explore-construction-documentation-building-site-near-steel-frames_472597-2691.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Supervisión de obra</h3>
+          </div>
+        </div>
+      </div>
 
-		
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/bricklayer-working-brick-construction-site-with-trowel-level-bricks-cement_843561-1533.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Muros de ladrillo</h3>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-lg-12 pdn_0">
-              <div class="case-study-single-box style_two">
-                <div class="case-study-thumb">
-                  <img src="https://img.freepik.com/premium-photo/construction-manager-engineer-dressed-orange-work-vests-hard-helmets-explore-construction-documentation-building-site-near-steel-frames_472597-2691.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
-                  <div class="case-study-content">
-                    <h3><a href="#">Supervisión de obra</a></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/medium-shot-construction-worker-doing-his-job_23-2149366655.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Reparación de techos</h3>
+          </div>
+        </div>
+      </div>
 
-			<div class="col-lg-12 pdn_0">
-              <div class="case-study-single-box style_two">
-                <div class="case-study-thumb">
-                  <img src="https://img.freepik.com/premium-photo/bricklayer-working-brick-construction-site-with-trowel-level-bricks-cement_843561-1533.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80" alt="">
-                  <div class="case-study-content">
-                    <h3><a href="#">Muros de ladrillo</a></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15089.jpg" alt="">
+          <div class="case-study-content">
+            <h3>Instalaciones eléctricas</h3>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-lg-12 pdn_0">
-              <div class="case-study-single-box style_two">
-                <div class="case-study-thumb">
-                  <img src="https://img.freepik.com/free-photo/medium-shot-construction-worker-doing-his-job_23-2149366655.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
-                  <div class="case-study-content">
-                    <h3><a href="#">Reparación de techos</a></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+    </div>
 
-            <div class="col-lg-12 pdn_0">
-              <div class="case-study-single-box style_two">
-                <div class="case-study-thumb">
-                  <img src="https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-15089.jpg?t=st=1751042516~exp=1751046116~hmac=f1aaa44676ed169c04aa74ba775a2cbef5889bb7f0ecc9bd54f5647c60eec06a&w=1380" alt="">
-                  <div class="case-study-content">
-                    <h3><a href="#">Instalaciones eléctricas</a></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-      </div><!-- /.owl-carousel -->
-    </div><!-- /.row -->
   </div>
-		</div>
-	</div>
-
-
-
 
 </section>
+
 <!--==================================================-->
 <!-- End Consalt Service Area Style four-->
 <!--==================================================-->
@@ -1468,29 +1562,32 @@
   });
 </script>
 
+<script>
+  $(document).ready(function () {
+    $('.case_study2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1200: {
+          items: 3
+        }
+      }
+    });
+  });
+</script>
 
-<Script>$('.case_study2').owlCarousel({
-  loop: true,
-  margin: 30,
-  nav: true,
-  autoplay: true,
-  autoplayTimeout: 4000,
-  smartSpeed: 800,
-  rewind: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-    768: {
-      items: 2
-    },
-    1200: {
-      items: 3
-    }
-  }
-});
 
-</Script>
 
 
 </body>
