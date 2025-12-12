@@ -14,16 +14,134 @@
 
 
 	<style>
-		.owl-carousel .owl-item.cloned {
-  		opacity: 0.5; /* O incluso display: none; */
-		}
+		/* =====================================================
+   GALERÍA – CASE STUDY (VERSIÓN LIMPIA)
+===================================================== */
 
-				
-		.choose_list li {
-			font-size: 30px;
-		}
+.case-study-area {
+  padding: 40px 0;
+}
 
+.case-study-area .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 
+/* =====================================================
+   OWL BASE
+===================================================== */
+
+.case_study2 {
+  width: 100%;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: hidden;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.case-study-single-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =====================================================
+   OVERLAY – FADE
+===================================================== */
+
+.case-study-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background: rgba(0, 47, 47, 0.75);
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.case-study-single-box:hover .case-study-content {
+  opacity: 1;
+}
+
+.case-study-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.case-study-content a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.owl-nav {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.owl-nav button {
+  background: #002F2F !important;
+  color: #ffffff !important;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  margin: 0 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.owl-nav button:hover {
+  background: #004F4F !important;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+  .case-study-content {
+    opacity: 1;
+    background: rgba(0, 47, 47, 0.85);
+  }
+
+  .case-study-content h3 {
+    font-size: 16px;
+  }
+}
 
 	</style>
 
@@ -413,141 +531,121 @@
 
 
 <section class="case-study-area style_three">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- section title -->
-				<div class="section_title home_five text-center ">
-					<h4>GALERÍA FOTOGRÁFICA</h4>
-					<!-- <h1>Excelencia en cada proyecto</h1> -->
-					<!-- <h1>With highly Satisfaction</h1> -->
-				</div>
-			</div>
-		</div>
-		<div class="row pdn_0">
-      <div class="case_study2 owl-carousel">
 
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/free-photo/heavy-excavator-digging-day-light-outdoors_23-2149194803.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Demolición de casas</a></h3>
-              </div>
-            </div>
-          </div>
+  <div class="container-fluid">
+
+    <!-- =========================
+         TÍTULO
+    ========================== -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section_title home_five text-center">
+          <h4>GALERÍA FOTOGRÁFICA</h4>
         </div>
-
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/premium-photo/pouring-cement-pavement-laid-from-house-road_73110-4220.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Cimientos</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/free-photo/man-working-with-argon-welding-machine-garage_158595-8147.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Soldaduras</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/free-photo/closeup-shot-person-using-paint-rollers-with-color-blue_181624-2451.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
-              <div class="case-study-content">
-                <h3><a href="#">Pintura del hogar</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/free-photo/young-couple-moving-new-home_23-2149242081.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
-              <div class="case-study-content">
-                <h3><a href="portfolio.html">Remodelación de tu hogar</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 pdn_0">
-          <div class="case-study-single-box style_two">
-            <div class="case-study-thumb">
-              <img src="https://img.freepik.com/premium-photo/engaged-supervisor-pointing-construction-plans_916860-9938.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
-              <div class="case-study-content">
-                <h3><a href="portfolio.html">Construcción</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-		<div class="col-lg-12 pdn_0">
-  <div class="case-study-single-box style_two">
-    <div class="case-study-thumb">
-      <img src="https://img.freepik.com/free-photo/plumbing-professional-doing-his-job_23-2150721549.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
-      <div class="case-study-content">
-        <h3><a href="#">Plomería general</a></h3>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="col-lg-12 pdn_0">
-  <div class="case-study-single-box style_two">
-    <div class="case-study-thumb">
-      <img src="https://img.freepik.com/premium-photo/couple-assembling-furniture-home_1048944-26121389.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
-      <div class="case-study-content">
-        <h3><a href="#">Renovación de interiores</a></h3>
+    <!-- =========================
+         OWL CAROUSEL
+    ========================== -->
+    <div class="case_study2 owl-carousel">
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/heavy-excavator-digging-day-light-outdoors_23-2149194803.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Demolición de casas</h3>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-<div class="col-lg-12 pdn_0">
-  <div class="case-study-single-box style_two">
-    <div class="case-study-thumb">
-      <img src="https://img.freepik.com/premium-photo/installation-lock-front-wooden-entrance-door-portrait-young-locksmith-workman_255667-60693.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
-      <div class="case-study-content">
-        <h3><a href="#">Instalacion de puertas</a></h3>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/pouring-cement-pavement-laid-from-house-road_73110-4220.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Cimientos</h3>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-<div class="col-lg-12 pdn_0">
-  <div class="case-study-single-box style_two">
-    <div class="case-study-thumb">
-      <img src="https://img.freepik.com/free-photo/young-engineer-adjusting-autonomous-heating_1303-26537.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
-      <div class="case-study-content">
-        <h3><a href="#">Instalación hidráulica</a></h3>
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/man-working-with-argon-welding-machine-garage_158595-8147.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Soldaduras</h3>
+          </div>
+        </div>
       </div>
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/closeup-shot-person-using-paint-rollers-with-color-blue_181624-2451.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Pintura del hogar</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/young-couple-moving-new-home_23-2149242081.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Remodelación de tu hogar</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/engaged-supervisor-pointing-construction-plans_916860-9938.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Construcción</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/plumbing-professional-doing-his-job_23-2150721549.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Plomería general</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/couple-assembling-furniture-home_1048944-26121389.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Renovación de interiores</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/premium-photo/installation-lock-front-wooden-entrance-door-portrait-young-locksmith-workman_255667-60693.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Instalación de puertas</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-single-box style_two">
+        <div class="case-study-thumb">
+          <img src="https://img.freepik.com/free-photo/young-engineer-adjusting-autonomous-heating_1303-26537.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_items_boosted&w=740" alt="">
+          <div class="case-study-content">
+            <h3>Instalación hidráulica</h3>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </div>
-</div>
 
-
-
-
-
-
-      </div><!-- /.owl-carousel -->
-    </div>
-	</div>
 </section>
+
 
 <!--==================================================-->
 <!-- End Consalt Team Area -->
@@ -718,28 +816,36 @@
   });
 </script>
 
-  <Script>$('.case_study2').owlCarousel({
-  loop: true,
-  margin: 30,
-  nav: true,
-  autoplay: true,
-  autoplayTimeout: 4000,
-  smartSpeed: 800,
-  rewind: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-    768: {
-      items: 2
-    },
-    1200: {
-      items: 3
-    }
-  }
-});
+ <script>
+  $(document).ready(function () {
+    $('.case_study2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      autoplay: false,
+      mouseDrag: true,
+      touchDrag: true,
+      pullDrag: true,
+      freeDrag: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        576: {
+          items: 2
+        },
+        992: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
+      }
+    });
+  });
+</script>
 
-</Script>
 
 </body>
 </html>
