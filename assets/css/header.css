@@ -135,11 +135,12 @@ nav.navbar {
 
 .banner-index {
   position: relative;
-  background: url('https://img.freepik.com/free-photo/construction-silhouette_1150-8336.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80') no-repeat center center/cover;
+  background: url('https://img.freepik.com/foto-gratis/maquinas-pesadas-trabajadores-construccion-trabajando-edificio_181624-8234.jpg?t=st=1770750595~exp=1770754195~hmac=dec45c308af25e0d0a3d1f5b4b031d8001fbebdcc8e68b7311f68bbd53c22dfd&w=1480') no-repeat center center/cover;
   padding: 200px 0; /* Aumenta de 100px a 200px */
   text-align: center;
   color: #fff;
   overflow: hidden;
+  height: 600px;
 }
 
 
